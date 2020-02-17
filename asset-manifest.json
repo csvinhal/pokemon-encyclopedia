@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/pokemon-encyclopedia/static/css/main.43411f93.chunk.css",
+    "main.js": "/pokemon-encyclopedia/static/js/main.2a748193.chunk.js",
+    "main.js.map": "/pokemon-encyclopedia/static/js/main.2a748193.chunk.js.map",
+    "runtime-main.js": "/pokemon-encyclopedia/static/js/runtime-main.8fbcaa51.js",
+    "runtime-main.js.map": "/pokemon-encyclopedia/static/js/runtime-main.8fbcaa51.js.map",
+    "static/js/2.3f5deb89.chunk.js": "/pokemon-encyclopedia/static/js/2.3f5deb89.chunk.js",
+    "static/js/2.3f5deb89.chunk.js.map": "/pokemon-encyclopedia/static/js/2.3f5deb89.chunk.js.map",
+    "index.html": "/pokemon-encyclopedia/index.html",
+    "precache-manifest.09281aaf24dbbe684280b13f155382ca.js": "/pokemon-encyclopedia/precache-manifest.09281aaf24dbbe684280b13f155382ca.js",
+    "service-worker.js": "/pokemon-encyclopedia/service-worker.js",
+    "static/css/main.43411f93.chunk.css.map": "/pokemon-encyclopedia/static/css/main.43411f93.chunk.css.map",
+    "static/js/2.3f5deb89.chunk.js.LICENSE.txt": "/pokemon-encyclopedia/static/js/2.3f5deb89.chunk.js.LICENSE.txt",
+    "static/media/Header.scss": "/pokemon-encyclopedia/static/media/Montserrat-UltraLight.816e4ead.otf",
+    "static/media/App.scss": "/pokemon-encyclopedia/static/media/background.fc38e0e9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8fbcaa51.js",
+    "static/js/2.3f5deb89.chunk.js",
+    "static/css/main.43411f93.chunk.css",
+    "static/js/main.2a748193.chunk.js"
+  ]
+}
