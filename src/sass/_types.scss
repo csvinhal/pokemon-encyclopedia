@@ -1,0 +1,32 @@
+h1 {
+  font-size: $h1-font-size;
+}
+h2 {
+  font-size: $h2-font-size;
+}
+h3 {
+  font-size: $h3-font-size;
+}
+h4 {
+  font-size: $h4-font-size;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: $dark-gunmetal;
+}
+
+h2 {
+  font-family: "Montserrat";
+}
+
+h3 {
+  font-family: "Alternate Medium";
+  font-weight: 500;
+}
+
+h4 {
+  font-family: "Alternate Medium";
+  font-weight: 500;
+}
