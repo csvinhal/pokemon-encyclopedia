@@ -1,0 +1,35 @@
+@import "./sass/base.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+#root,
+.app,
+.app__container {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: normal normal $font-weight-normal 16px $font-family-base;
+  color: $font-color;
+  background-image: url("./assets/background.png");
+}
+
+.app__container {
+  display: block;
+  margin: auto;
+  min-height: 100%;
+  width: 1024px;
+  background-color: $anti-flash-white;
+  padding-top: 50px;
+}

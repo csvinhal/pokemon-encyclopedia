@@ -1,13 +1,15 @@
 import React from "react";
-import "./Header.css";
+import "./Header.scss";
 
-const Header = props => {
+const Header = () => {
   return (
     <header className="header">
-      <div className="header__logo-img">
-        <img src={require("./../assets/pokeball.png")} alt="Logo" />
-      </div>
-      <div className="header__logo">POKÉDEX</div>
+      <nav className="header__nav">
+        <div className="nav__logo-img">
+          <img src={require("./../assets/pokeball.png")} alt="Logo" />
+        </div>
+        <div className="nav__logo-label">POKÉDEX</div>
+      </nav>
     </header>
   );
 };
