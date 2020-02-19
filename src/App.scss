@@ -23,13 +23,33 @@ body {
   font: normal normal $font-weight-normal 16px $font-family-base;
   color: $font-color;
   background-image: url("./assets/background.png");
+  background-position: center center;
+  background-size: cover;
 }
 
 .app__container {
   display: block;
   margin: auto;
   min-height: 100%;
-  width: 1024px;
+  width: calc(100% - 18px);
   background-color: $anti-flash-white;
   padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .app__container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .app__container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app__container {
+    width: 1024px;
+  }
 }
