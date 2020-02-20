@@ -10,9 +10,7 @@ const App = () => (
       <Header />
       <main className="app__container">
         <Switch>
-          <Route path="/">
-            <PokemonList />
-          </Route>
+          <Route path="/" component={PokemonList} />
         </Switch>
       </main>
     </div>

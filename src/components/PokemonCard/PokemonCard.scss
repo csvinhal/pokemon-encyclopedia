@@ -2,7 +2,7 @@
 
 .pokemon-card {
   background-color: $timberwolf;
-  border-radius: 6px;
+  border-radius: 0.25rem;
 }
 
 .pokemon-card--small {
@@ -13,4 +13,17 @@
 .pokemon-card--large {
   width: 510px;
   height: 496px;
+}
+
+.pokemon-card__title {
+  margin-top: 6px;
+  margin-left: 6px;
+}
+.title__id {
+  font-weight: 300;
+}
+
+.title__name {
+  font-weight: 400;
+  text-transform: capitalize;
 }

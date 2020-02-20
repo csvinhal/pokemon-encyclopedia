@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import PokemonCard from '../../components/PokemonCard/PokemonCard';
 import { fetchAllPokemons } from '../../shared/pokemonApi';
+import PokemonItem from './PokemonItem/PokemonItem';
 import './PokemosList.scss';
 
 const PokemonList = () => {
@@ -19,12 +19,7 @@ const PokemonList = () => {
       <div className="pokemon-list__cards">
         {pokemons &&
           pokemons.map((pokemon) => (
-            <PokemonCard
-              key={pokemon.name}
-              name={pokemon.name}
-              size="small"
-              className="cards__pokemon-card"
-            />
+            <PokemonItem key={pokemon.name} url={pokemon.url} />
           ))}
       </div>
     </div>
