@@ -1,0 +1,15 @@
+@import '../../sass/variables';
+
+.pokemon-card {
+  background-color: $timberwolf;
+}
+
+.pokemon-card--small {
+  width: 216px;
+  height: 238px;
+}
+
+.pokemon-card--large {
+  width: 510px;
+  height: 496px;
+}

@@ -1,0 +1,19 @@
+.pokemon-list {
+  margin: 0 60px;
+}
+
+.pokemon-list h1 {
+  margin: 54px 0;
+  text-transform: uppercase;
+}
+
+.pokemon-list__cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cards__pokemon-card {
+    margin-bottom: 60px;
+}
