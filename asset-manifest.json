@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/pokemon-encyclopedia/static/css/main.cb6cbeab.chunk.css",
-    "main.js": "/pokemon-encyclopedia/static/js/main.02b56ca3.chunk.js",
-    "main.js.map": "/pokemon-encyclopedia/static/js/main.02b56ca3.chunk.js.map",
+    "main.css": "/pokemon-encyclopedia/static/css/main.c944521c.chunk.css",
+    "main.js": "/pokemon-encyclopedia/static/js/main.830baf8b.chunk.js",
+    "main.js.map": "/pokemon-encyclopedia/static/js/main.830baf8b.chunk.js.map",
     "runtime-main.js": "/pokemon-encyclopedia/static/js/runtime-main.8fbcaa51.js",
     "runtime-main.js.map": "/pokemon-encyclopedia/static/js/runtime-main.8fbcaa51.js.map",
-    "static/js/2.30e4a80f.chunk.js": "/pokemon-encyclopedia/static/js/2.30e4a80f.chunk.js",
-    "static/js/2.30e4a80f.chunk.js.map": "/pokemon-encyclopedia/static/js/2.30e4a80f.chunk.js.map",
+    "static/js/2.ed67911f.chunk.js": "/pokemon-encyclopedia/static/js/2.ed67911f.chunk.js",
+    "static/js/2.ed67911f.chunk.js.map": "/pokemon-encyclopedia/static/js/2.ed67911f.chunk.js.map",
     "index.html": "/pokemon-encyclopedia/index.html",
-    "precache-manifest.6c033d4093b699edafa692455c3f2e90.js": "/pokemon-encyclopedia/precache-manifest.6c033d4093b699edafa692455c3f2e90.js",
+    "precache-manifest.558df955867ae7aa8187b16457b7cf89.js": "/pokemon-encyclopedia/precache-manifest.558df955867ae7aa8187b16457b7cf89.js",
     "service-worker.js": "/pokemon-encyclopedia/service-worker.js",
-    "static/css/main.cb6cbeab.chunk.css.map": "/pokemon-encyclopedia/static/css/main.cb6cbeab.chunk.css.map",
-    "static/js/2.30e4a80f.chunk.js.LICENSE.txt": "/pokemon-encyclopedia/static/js/2.30e4a80f.chunk.js.LICENSE.txt",
+    "static/css/main.c944521c.chunk.css.map": "/pokemon-encyclopedia/static/css/main.c944521c.chunk.css.map",
+    "static/js/2.ed67911f.chunk.js.LICENSE.txt": "/pokemon-encyclopedia/static/js/2.ed67911f.chunk.js.LICENSE.txt",
     "static/media/Header.scss": "/pokemon-encyclopedia/static/media/Montserrat-UltraLight.816e4ead.otf",
     "static/media/App.scss": "/pokemon-encyclopedia/static/media/background.fc38e0e9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8fbcaa51.js",
-    "static/js/2.30e4a80f.chunk.js",
-    "static/css/main.cb6cbeab.chunk.css",
-    "static/js/main.02b56ca3.chunk.js"
+    "static/js/2.ed67911f.chunk.js",
+    "static/css/main.c944521c.chunk.css",
+    "static/js/main.830baf8b.chunk.js"
   ]
 }
