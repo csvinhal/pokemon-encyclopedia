@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.scss';
 import Header from './header/Header';
+import PokemonList from './pages/PokemonList/PokemonList';
 
-function App() {
-  return (
-    <div className="app">
-      <Header />
-      <main className="app__container" />
-    </div>
-  );
-}
+const App = () => (
+  <div className="app">
+    <Header />
+    <main className="app__container">
+      <PokemonList />
+    </main>
+  </div>
+);
 
 export default App;
