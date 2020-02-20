@@ -1,4 +1,4 @@
-@import "./sass/base.scss";
+@import './sass/base.scss';
 
 html {
   box-sizing: border-box;
@@ -13,8 +13,7 @@ html {
 html,
 body,
 #root,
-.app,
-.app__container {
+.app {
   height: 100%;
 }
 
@@ -22,7 +21,7 @@ body {
   margin: 0;
   font: normal normal $font-weight-normal 16px $font-family-base;
   color: $font-color;
-  background-image: url("./assets/background.png");
+  background-image: url('./assets/background.png');
   background-position: center center;
   background-size: cover;
 }

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import instance from '../../shared/requestsConfig';
-import './PokemosList.scss';
 import PokemonCard from '../../components/PokemonCard/PokemonCard';
+import { fetchAllPokemons } from '../../shared/pokemonApi';
+import './PokemosList.scss';
 
 const PokemonList = () => {
   const [pokemons, setPokemons] = useState([]);
 
   useEffect(() => {
-    instance.get('pokemon/?limit=11&offset=0').then((response) => {
+    fetchAllPokemons().then((response) => {
       const { data } = response;
       setPokemons(data.results);
     });
@@ -19,7 +19,12 @@ const PokemonList = () => {
       <div className="pokemon-list__cards">
         {pokemons &&
           pokemons.map((pokemon) => (
-            <PokemonCard key={pokemon.name} name={pokemon.name} size="small" className="cards__pokemon-card" />
+            <PokemonCard
+              key={pokemon.name}
+              name={pokemon.name}
+              size="small"
+              className="cards__pokemon-card"
+            />
           ))}
       </div>
     </div>

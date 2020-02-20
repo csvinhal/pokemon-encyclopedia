@@ -1,15 +1,22 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Header from './header/Header';
 import PokemonList from './pages/PokemonList/PokemonList';
 
 const App = () => (
-  <div className="app">
-    <Header />
-    <main className="app__container">
-      <PokemonList />
-    </main>
-  </div>
+  <BrowserRouter>
+    <div className="app">
+      <Header />
+      <main className="app__container">
+        <Switch>
+          <Route path="/">
+            <PokemonList />
+          </Route>
+        </Switch>
+      </main>
+    </div>
+  </BrowserRouter>
 );
 
 export default App;
