@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pokemon-encyclopedia/static/css/main.77311d24.chunk.css",
-    "main.js": "/pokemon-encyclopedia/static/js/main.23be0617.chunk.js",
-    "main.js.map": "/pokemon-encyclopedia/static/js/main.23be0617.chunk.js.map",
+    "main.css": "/pokemon-encyclopedia/static/css/main.bc3d305e.chunk.css",
+    "main.js": "/pokemon-encyclopedia/static/js/main.b733513a.chunk.js",
+    "main.js.map": "/pokemon-encyclopedia/static/js/main.b733513a.chunk.js.map",
     "runtime-main.js": "/pokemon-encyclopedia/static/js/runtime-main.8fbcaa51.js",
     "runtime-main.js.map": "/pokemon-encyclopedia/static/js/runtime-main.8fbcaa51.js.map",
     "static/js/2.5b2d95a4.chunk.js": "/pokemon-encyclopedia/static/js/2.5b2d95a4.chunk.js",
     "static/js/2.5b2d95a4.chunk.js.map": "/pokemon-encyclopedia/static/js/2.5b2d95a4.chunk.js.map",
     "index.html": "/pokemon-encyclopedia/index.html",
-    "precache-manifest.87dae7a7422b52da1e464faa2ad6457c.js": "/pokemon-encyclopedia/precache-manifest.87dae7a7422b52da1e464faa2ad6457c.js",
+    "precache-manifest.f57660bc8bcc28c10b6a147b9f4e2da8.js": "/pokemon-encyclopedia/precache-manifest.f57660bc8bcc28c10b6a147b9f4e2da8.js",
     "service-worker.js": "/pokemon-encyclopedia/service-worker.js",
-    "static/css/main.77311d24.chunk.css.map": "/pokemon-encyclopedia/static/css/main.77311d24.chunk.css.map",
+    "static/css/main.bc3d305e.chunk.css.map": "/pokemon-encyclopedia/static/css/main.bc3d305e.chunk.css.map",
     "static/js/2.5b2d95a4.chunk.js.LICENSE.txt": "/pokemon-encyclopedia/static/js/2.5b2d95a4.chunk.js.LICENSE.txt",
     "static/media/Header.scss": "/pokemon-encyclopedia/static/media/Montserrat-UltraLight.816e4ead.otf",
     "static/media/App.scss": "/pokemon-encyclopedia/static/media/background.fc38e0e9.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.8fbcaa51.js",
     "static/js/2.5b2d95a4.chunk.js",
-    "static/css/main.77311d24.chunk.css",
-    "static/js/main.23be0617.chunk.js"
+    "static/css/main.bc3d305e.chunk.css",
+    "static/js/main.b733513a.chunk.js"
   ]
 }
