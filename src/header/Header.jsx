@@ -1,12 +1,13 @@
-import React from "react";
-import "./Header.scss";
+import React from 'react';
+import image from '../assets/pokeball.png';
+import './Header.scss';
 
 const Header = () => {
   return (
     <header className="header">
       <nav className="header__nav">
         <div className="nav__logo-img">
-          <img src={require("./../assets/pokeball.png")} alt="Logo" />
+          <img src={image} alt="Logo" />
         </div>
         <div className="nav__logo-label">POKÉDEX</div>
       </nav>
