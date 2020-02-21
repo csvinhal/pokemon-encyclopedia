@@ -1,0 +1,28 @@
+@import '../../sass/variables';
+
+.pokemon-type-badge__container {
+  display: inline-block;
+  width: 108px;
+  height: 22px;
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    height: 100%;
+  }
+
+  &--left {
+    border-top-right-radius: 0.25rem;
+  }
+  &--right {
+    border-top-left-radius: 0.25rem;
+  }
+
+  @each $color-name in map-keys($badges-colors) {
+    &--#{$color-name} {
+      background-color: map-get($badges-colors, $color-name);
+    }
+  }
+}

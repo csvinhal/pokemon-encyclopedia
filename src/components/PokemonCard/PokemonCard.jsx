@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import PokemonTypeBadge from '../PokemonTypeBadge/PokemonTypeBadge';
 import './PokemonCard.scss';
 
 const PokemonCard = (props) => {
@@ -31,11 +32,32 @@ const PokemonCard = (props) => {
         <span className="title__id">
           {'#'}
           {pokemon.id}
-          {' '}
         </span>
         <span className="title__name">{pokemon.name}</span>
-        <img src={pokemon.img} alt="Pokemon" />
       </h2>
+      <div className="pokemon-card__img">
+        <img src={pokemon.img} alt="Pokemon" />
+      </div>
+      <div className="pokemon-card__footer">
+        {pokemon.types
+          .sort((a, b) => {
+            if (a.slot > b.slot) {
+              return 1;
+            }
+            if (a.slot < b.slot) {
+              return -1;
+            }
+
+            return 0;
+          })
+          .map((pokemonType, index) => (
+            <PokemonTypeBadge
+              key={pokemonType.slot}
+              pos={index === 0 ? 'left' : 'right'}
+              type={pokemonType.type.name}
+            />
+          ))}
+      </div>
     </div>
   );
 };

@@ -1,29 +1,44 @@
 @import '../../sass/variables';
 
 .pokemon-card {
+  display: flex;
+  flex-direction: column;
   background-color: $timberwolf;
   border-radius: 0.25rem;
-}
+  overflow: hidden;
 
-.pokemon-card--small {
-  width: 216px;
-  height: 238px;
-}
+  &--small {
+    width: 216px;
+    height: 238px;
+  }
 
-.pokemon-card--large {
-  width: 510px;
-  height: 496px;
+  &--large {
+    width: 510px;
+    height: 496px;
+  }
 }
 
 .pokemon-card__title {
   margin-top: 6px;
   margin-left: 6px;
+  margin-bottom: 0;
 }
+
 .title__id {
   font-weight: 300;
+  padding-right: 0.5rem;
 }
 
 .title__name {
-  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
   text-transform: capitalize;
+}
+
+.pokemon-card__img {
+  align-self: center;
+
+  & img {
+    height: 177px;
+  }
 }
