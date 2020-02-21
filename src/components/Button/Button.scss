@@ -1,0 +1,18 @@
+@import '../../sass/variables';
+
+.button {
+  font-family: 'Alternate Medium';
+  font-size: 15px;
+  border: none;
+  border-radius: 0.25rem 0.25rem;
+  width: 200px;
+  padding: 8px;
+  text-transform: uppercase;
+  &.primary {
+    background-color: $united-nations-blue;
+  }
+
+  &.secondary {
+    background-color: $spanish-orange;
+  }
+}

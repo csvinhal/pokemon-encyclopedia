@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Button from '../../components/Button/Button';
 import { fetchAllPokemons } from '../../shared/pokemonApi';
 import PokemonItem from './PokemonItem/PokemonItem';
 import './PokemosList.scss';
@@ -21,6 +22,9 @@ const PokemonList = () => {
           pokemons.map((pokemon) => (
             <PokemonItem key={pokemon.name} url={pokemon.url} />
           ))}
+      </div>
+      <div className="pokemon-list__load-more">
+        <Button priority="primary" label="Load more" />
       </div>
     </div>
   );
