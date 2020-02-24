@@ -12,7 +12,7 @@ const PokemonCard = (props) => {
     return newId.substr(newId.length - 3);
   };
 
-  pokemon.id = getFormattedId(pokemon.id);
+  pokemon.formattedId = getFormattedId(pokemon.id);
 
   if (className) {
     cardClassName.push(className);
@@ -20,10 +20,10 @@ const PokemonCard = (props) => {
 
   if (size === 'small') {
     cardClassName.push('pokemon-card--small');
-    pokemon.img = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${pokemon.id}.png`;
+    pokemon.img = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${pokemon.formattedId}.png`;
   } else if (size === 'large') {
     cardClassName.push('pokemon-card--large');
-    pokemon.img = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokemon.id}.png`;
+    pokemon.img = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokemon.formattedId}.png`;
   }
 
   return (
@@ -31,7 +31,7 @@ const PokemonCard = (props) => {
       <h2 className="pokemon-card__title">
         <span className="title__id">
           {'#'}
-          {pokemon.id}
+          {pokemon.formattedId}
         </span>
         <span className="title__name">{pokemon.name}</span>
       </h2>

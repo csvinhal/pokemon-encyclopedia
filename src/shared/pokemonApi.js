@@ -5,6 +5,4 @@ export const fetchAllPokemons = (limit = 12, offset = 0) => {
   return axios.get(`pokemon/?limit=${limit}&offset=${offset}`);
 };
 
-export const getPokemons = (id) => {
-  return axios.get(`pokemon/${id}`);
-};
+export const getPokemon = (id) => axios.get(`pokemon/${id}`);

@@ -10,35 +10,39 @@
   &--small {
     width: 216px;
     height: 238px;
+
+    & .pokemon-card__title {
+      margin-top: 6px;
+      margin-left: 6px;
+      margin-bottom: 0;
+    }
+
+    & .title__id {
+      font-weight: 300;
+      padding-right: 0.5rem;
+    }
+
+    & .title__name {
+      display: inline-block;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+
+    & .pokemon-card__img {
+      align-self: center;
+
+      & img {
+        height: 179px;
+      }
+    }
   }
 
   &--large {
     width: 510px;
     height: 496px;
-  }
-}
 
-.pokemon-card__title {
-  margin-top: 6px;
-  margin-left: 6px;
-  margin-bottom: 0;
-}
-
-.title__id {
-  font-weight: 300;
-  padding-right: 0.5rem;
-}
-
-.title__name {
-  display: inline-block;
-  font-weight: 700;
-  text-transform: capitalize;
-}
-
-.pokemon-card__img {
-  align-self: center;
-
-  & img {
-    height: 179px;
+    & .pokemon-card__title {
+      display: none;
+    }
   }
 }

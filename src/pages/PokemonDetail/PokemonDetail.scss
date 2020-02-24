@@ -1,0 +1,18 @@
+.pokemon-detail {
+  padding: 0 32px;
+}
+
+.pokemon-detail__pokemon-name {
+  margin: 32px 0;
+  text-align: center;
+
+  .pokemon-name__id {
+    font-weight: 300;
+    padding-right: 0.5rem;
+  }
+}
+
+.pokemon-detail__explore-more {
+  padding-top: 60px;
+  text-align: center;
+}
