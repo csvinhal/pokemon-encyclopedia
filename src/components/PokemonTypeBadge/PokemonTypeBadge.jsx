@@ -24,8 +24,26 @@ const PokemonTypeBadge = (props) => {
 
 PokemonTypeBadge.propTypes = {
   pos: PropTypes.oneOf(['left', 'right']).isRequired,
-  type: PropTypes.oneOf(['grass', 'poison', 'fire', 'flying', 'water', 'bug'])
-    .isRequired,
+  type: PropTypes.oneOf([
+    'grass',
+    'poison',
+    'fire',
+    'flying',
+    'water',
+    'bug',
+    'normal',
+    'fairy',
+    'ground',
+    'fighting',
+    'electric',
+    'psychic',
+    'rock',
+    'steel',
+    'ice',
+    'ghost',
+    'dragon',
+    'dark',
+  ]).isRequired,
 };
 
 export default PokemonTypeBadge;

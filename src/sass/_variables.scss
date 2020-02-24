@@ -1,5 +1,6 @@
 // Color
 
+$white: #fff;
 $anti-flash-white: #f2f1f1;
 $timberwolf: #d8d8d8;
 $paynes-grey: #606c78;
@@ -33,12 +34,45 @@ $headings-line-height: 1.2 !default;
 $headings-color: null !default;
 
 // Pokemon Type Badges
+$grass: $june-bud;
+$poison: $bright-lavender;
+$fire: $spanish-orange;
+$flying: #3dc7ef;
+$flying-second: $paynes-grey;
+$water: $united-nations-blue;
+$bug: $june-bud;
+$normal: #a4acaf;
+$electric: #eed535;
+$fairy: #fdb9e9;
+$fighting: #d56723;
+$psychic: #f366b9;
+$rock: #a38c21;
+$steel: #9eb7b8;
+$ice: #51c4e7;
+$ghost: #7b62a3;
+$ground: #f7de3f;
+$ground-second: #ab9842;
+$dragon: #53a4cf;
+$dragon-second: #f16e57;
+$dark: #707070;
 
 $badges-colors: (
-  grass: $june-bud,
-  poison: $bright-lavender,
-  fire: $spanish-orange,
-  flying: $paynes-grey,
-  water: $united-nations-blue,
-  bug: $june-bud,
+  grass: $grass,
+  poison: $poison,
+  fire: $fire,
+  flying: $flying,
+  water: $water,
+  bug: $bug,
+  normal: $normal,
+  electric: $electric,
+  fairy: $fairy,
+  fighting: $fighting,
+  psychic: $psychic,
+  rock: $rock,
+  steel: $steel,
+  ice: $ice,
+  ghost: $ghost,
+  ground: $ground,
+  dragon: $dragon,
+  dark: $dark,
 ) !default;

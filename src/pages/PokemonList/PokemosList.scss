@@ -8,7 +8,13 @@
   text-transform: uppercase;
 }
 
-.pokemon-list__cards {
+ul.pokemon-list__cards {
+  list-style: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;

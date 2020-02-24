@@ -6,27 +6,32 @@ import './PokemosList.scss';
 
 const PokemonList = () => {
   const [pokemons, setPokemons] = useState([]);
+  const [offset, setOffset] = useState(0);
+
+  const onLoadMore = () => {
+    setOffset(offset + 12);
+  };
 
   useEffect(() => {
-    fetchAllPokemons().then((response) => {
+    fetchAllPokemons(12, offset).then((response) => {
       const { data } = response;
-      setPokemons(data.results);
+      setPokemons((p) => [...p, ...data.results]);
     });
-  }, []);
+  }, [offset]);
 
   return (
-    <div className="pokemon-list">
+    <section className="pokemon-list">
       <h1>Pokédex</h1>
-      <div className="pokemon-list__cards">
-        {pokemons &&
+      <ul className="pokemon-list__cards">
+        {pokemons.length &&
           pokemons.map((pokemon) => (
             <PokemonItem key={pokemon.name} url={pokemon.url} />
           ))}
-      </div>
+      </ul>
       <div className="pokemon-list__load-more">
-        <Button priority="primary" label="Load more" />
+        <Button priority="primary" label="Load more" onClick={onLoadMore} />
       </div>
-    </div>
+    </section>
   );
 };
 

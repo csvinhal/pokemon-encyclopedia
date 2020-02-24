@@ -21,8 +21,16 @@
   }
 
   @each $color-name in map-keys($badges-colors) {
+    $color: map-get($badges-colors, $color-name);
     &--#{$color-name} {
-      background-color: map-get($badges-colors, $color-name);
+      @if $color-name == 'ground' {
+        background: linear-gradient(180deg, $color 50%, $ground-second 50%);
+      } @else if $color-name == 'flying' {
+        background: linear-gradient(180deg, $color 50%, $flying-second 50%);
+      } @else if $color-name == 'dragon' {
+        background: linear-gradient(180deg, $color 50%, $dragon-second 50%);
+      }
+      background-color: $color;
     }
   }
 }

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import PokemonCard from '../../../components/PokemonCard/PokemonCard';
 import axios from '../../../shared/requestsConfig';
 import './PokemonItem.scss';
@@ -7,6 +8,7 @@ import './PokemonItem.scss';
 const PokemonItem = (props) => {
   const { url } = props;
   const [pokemon, setPokemon] = useState(null);
+  const history = useHistory(useHistory);
 
   useEffect(() => {
     axios.get(url).then((response) => {
@@ -15,16 +17,23 @@ const PokemonItem = (props) => {
     });
   }, [url]);
 
+  const navigateToDetail = () => {
+    history.push(`/${pokemon.id}`);
+  };
+
   return (
-    <div className="pokemon-item">
-      {pokemon && (
-        <PokemonCard
-          size="small"
-          pokemon={pokemon}
-          className="item__pokemon-card"
-        />
-      )}
-    </div>
+    <li className="pokemon-item">
+      <Link to={`/${pokemon && pokemon.id}`}>
+        {pokemon && (
+          <PokemonCard
+            size="small"
+            pokemon={pokemon}
+            className="item__pokemon-card"
+            onClick={navigateToDetail}
+          />
+        )}
+      </Link>
+    </li>
   );
 };
 

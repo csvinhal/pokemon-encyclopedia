@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Header from './header/Header';
 import PokemonList from './pages/PokemonList/PokemonList';
+import PokemonDetail from './pages/PokemonDetail/PokemonDetail';
 
 const App = () => (
   <BrowserRouter>
@@ -10,7 +11,8 @@ const App = () => (
       <Header />
       <main className="app__container">
         <Switch>
-          <Route path="/" component={PokemonList} />
+          <Route path="/:id" component={PokemonDetail} exact />
+          <Route path="/" component={PokemonList} exact />
         </Switch>
       </main>
     </div>

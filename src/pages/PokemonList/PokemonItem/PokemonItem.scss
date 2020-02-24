@@ -1,3 +1,21 @@
+@import '../../../sass/variables';
+
 .pokemon-item {
   margin-bottom: 60px;
+}
+
+li.pokemon-item a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: $dark-gunmetal;
+  }
+}
+
+.item__pokemon-card:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: 300ms easy;
 }
