@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import './App.scss';
 import Header from './header/Header';
 import PokemonList from './pages/PokemonList/PokemonList';
@@ -11,8 +11,9 @@ const App = () => (
       <Header />
       <main className="app__container">
         <Switch>
-          <Route path="/:id" component={PokemonDetail} exact />
-          <Route path="/" component={PokemonList} exact />
+          <Route path="/:id" component={PokemonDetail} />
+          <Route path="/" component={PokemonList} />
+          <Redirect to="/" />
         </Switch>
       </main>
     </div>

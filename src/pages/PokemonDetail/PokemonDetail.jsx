@@ -9,7 +9,7 @@ const PokemonDetail = () => {
   const { id } = useParams();
   const history = useHistory();
   const [pokemon, setPokemon] = useState(null);
-  
+
   function handleExploreMoreClick() {
     history.push('/');
   }
