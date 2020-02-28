@@ -6,7 +6,7 @@ import PokemonList from './pages/PokemonList/PokemonList';
 import PokemonDetail from './pages/PokemonDetail/PokemonDetail';
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div className="app">
       <Header />
       <main className="app__container">
