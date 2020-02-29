@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e023cb165f536ff19e7e48c7b1050c05",
+    "revision": "c0853a354c4a0c9ed35ef8f4e99f40b4",
     "url": "/pokemon-encyclopedia/index.html"
   },
   {
-    "revision": "a9713a02dfe6da4e0cd9",
-    "url": "/pokemon-encyclopedia/static/css/main.9c0b6288.chunk.css"
+    "revision": "6cc55f82f9b3d6a6f0a3",
+    "url": "/pokemon-encyclopedia/static/css/main.542f82a2.chunk.css"
   },
   {
-    "revision": "e8c9ad8d514f959f7e77",
-    "url": "/pokemon-encyclopedia/static/js/2.cbd81fbf.chunk.js"
+    "revision": "c8eff949d7e95aa209b9",
+    "url": "/pokemon-encyclopedia/static/js/2.6c3df427.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/pokemon-encyclopedia/static/js/2.cbd81fbf.chunk.js.LICENSE.txt"
+    "url": "/pokemon-encyclopedia/static/js/2.6c3df427.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a9713a02dfe6da4e0cd9",
-    "url": "/pokemon-encyclopedia/static/js/main.8f0efbbb.chunk.js"
+    "revision": "6cc55f82f9b3d6a6f0a3",
+    "url": "/pokemon-encyclopedia/static/js/main.0215299b.chunk.js"
   },
   {
     "revision": "f2b0999b293cae0f1d4a",
