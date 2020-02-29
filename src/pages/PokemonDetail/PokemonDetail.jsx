@@ -1,12 +1,13 @@
+import Axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import PokemonCard from '../../components/PokemonCard/PokemonCard';
 import { getPokemon, getPokemonSpecie } from '../../shared/pokemonApi';
+import { getFormattedId } from '../../shared/pokemonFunctions';
 import './PokemonDetail.scss';
 import PokemonDetailHeader from './PokemonDetailHeader/PokemonDetailHeader';
 import PokemonMove from './PokemonMove/PokemonMove';
-import { getFormattedId } from '../../shared/pokemonFunctions';
 
 const PokemonDetail = () => {
   const { id } = useParams();
@@ -19,14 +20,15 @@ const PokemonDetail = () => {
   }
 
   useEffect(() => {
-    getPokemon(id).then((response) => {
-      const { data } = response;
-      setPokemon(data);
-    });
+    const reqOne = getPokemon(id);
+    const reqTwo = getPokemonSpecie(id);
 
-    getPokemonSpecie(id).then((response) => {
-      const { data } = response;
-      setSpecie(data);
+    Axios.all([reqOne, reqTwo]).then((response) => {
+      const pokemonData = response[0].data;
+      setPokemon(pokemonData);
+
+      const specieData = response[1].data;
+      setSpecie(specieData);
     });
   }, [id]);
 

@@ -1,11 +1,11 @@
-import axios from './requestsConfig';
+import Axios from './requestsConfig';
 
 export const fetchAllPokemons = (limit = 12, offset = 0) => {
-  return axios.get(`pokemon/?limit=${limit}&offset=${offset}`);
+  return Axios.get(`pokemon/?limit=${limit}&offset=${offset}`);
 };
 
-export const getPokemon = (id) => axios.get(`pokemon/${id}`);
+export const getPokemon = (id) => Axios.get(`pokemon/${id}`);
 
-export const getPokemonSpecie = (id) => axios.get(`pokemon-species/${id}`);
+export const getPokemonSpecie = (id) => Axios.get(`pokemon-species/${id}`);
 
-export const getMoveDetail = (name) => axios.get(`move/${name}`);
+export const getMoveDetail = (name) => Axios.get(`move/${name}`);
