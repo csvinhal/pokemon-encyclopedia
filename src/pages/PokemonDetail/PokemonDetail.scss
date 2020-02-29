@@ -8,9 +8,13 @@
   margin: 32px 0;
   text-align: center;
 
-  .pokemon-name__id {
+  & .pokemon-name__id {
     font-weight: 300;
     padding-right: 0.5rem;
+  }
+  & .pokemon-name__name {
+    display: inline-block;
+    text-transform: capitalize;
   }
 }
 

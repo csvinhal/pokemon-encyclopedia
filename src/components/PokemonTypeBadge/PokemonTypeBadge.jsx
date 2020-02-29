@@ -27,7 +27,7 @@ const PokemonTypeBadge = (props) => {
 
   return (
     <div className={className.join(' ')}>
-      <span>{children}</span>
+      <span className="container__label">{children}</span>
     </div>
   );
 };

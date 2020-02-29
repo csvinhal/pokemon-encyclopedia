@@ -1,16 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { getFormattedId } from '../../shared/pokemonFunctions';
 import PokemonTypeBadge from '../PokemonTypeBadge/PokemonTypeBadge';
 import './PokemonCard.scss';
 
 const PokemonCard = (props) => {
   const { pokemon, size, className } = props;
   const cardClassName = ['pokemon-card'];
-
-  const getFormattedId = (id) => {
-    const newId = `000${id}`;
-    return newId.substr(newId.length - 3);
-  };
 
   pokemon.formattedId = getFormattedId(pokemon.id);
 

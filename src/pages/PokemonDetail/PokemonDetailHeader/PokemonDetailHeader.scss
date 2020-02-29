@@ -1,0 +1,68 @@
+@import '../../../sass/variables';
+
+.pokemon-detail-header {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  width: 100%;
+}
+
+.pokemon-detail-header h2 {
+  color: $white;
+}
+
+.pokemon-detail-header__left-side {
+  display: flex;
+  flex: 1;
+  background-color: $paynes-grey;
+  width: 100%;
+  margin-right: 2px;
+  border-bottom-right-radius: 1rem;
+  text-decoration: none;
+
+  & .left-side__name {
+    margin: 25px 50px 25px auto;
+  }
+
+  & img {
+    margin: 32px 0 32px 32px;
+  }
+}
+
+.left-side__name .name__id {
+  font-weight: 300;
+  padding-right: 0.5rem;
+}
+
+.left-side__name .name__name {
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.pokemon-detail-header__right-side {
+  display: flex;
+  flex: 1;
+  background-color: $paynes-grey;
+  width: 100%;
+  margin-left: 2px;
+  border-bottom-left-radius: 1rem;
+  text-decoration: none;
+
+  & .right-side__name {
+    margin: 25px auto 25px 50px;
+  }
+
+  & img {
+    margin: 32px 32px 32px auto;
+  }
+}
+
+.right-side__name .name__id {
+  font-weight: 300;
+}
+
+.right-side__name .name__name {
+  display: inline-block;
+  text-transform: capitalize;
+  padding-right: 0.5rem;
+}

@@ -21,7 +21,11 @@ const PokemonMove = (props) => {
   }, [name]);
 
   return (
-    <div className={moveClassName.join(' ')}>
+    <div
+      className={moveClassName.join(' ')}
+      role="listitem"
+      aria-label={move && move.name}
+    >
       {move && (
         <PokemonTypeBadge
           key={move.name}
