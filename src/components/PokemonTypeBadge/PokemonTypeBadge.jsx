@@ -3,11 +3,17 @@ import React from 'react';
 import './PokemonTypeBadge.scss';
 
 const PokemonTypeBadge = (props) => {
-  const { pos, type } = props;
+  const { pos, type, size } = props;
   const className = [
     'pokemon-type-badge__container',
     `pokemon-type-badge__container--${type}`,
   ];
+
+  if (size === 'small') {
+    className.push('pokemon-type-badge__container--small');
+  } else if (size === 'large') {
+    className.push('pokemon-type-badge__container--large');
+  }
 
   if (pos === 'left') {
     className.push('pokemon-type-badge__container--left');
@@ -44,6 +50,7 @@ PokemonTypeBadge.propTypes = {
     'dragon',
     'dark',
   ]).isRequired,
+  size: PropTypes.oneOf(['small', 'large']).isRequired,
 };
 
 export default PokemonTypeBadge;

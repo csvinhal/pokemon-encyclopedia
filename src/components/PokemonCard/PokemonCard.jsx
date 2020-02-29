@@ -55,6 +55,7 @@ const PokemonCard = (props) => {
               key={pokemonType.slot}
               pos={index === 0 ? 'left' : 'right'}
               type={pokemonType.type.name}
+              size={size}
             />
           ))}
       </div>
@@ -69,6 +70,6 @@ PokemonCard.defaultProps = {
 PokemonCard.propTypes = {
   className: PropTypes.string,
   pokemon: PropTypes.instanceOf(Object).isRequired,
-  size: PropTypes.string.isRequired,
+  size: PropTypes.oneOf(['small', 'large']).isRequired,
 };
 export default PokemonCard;

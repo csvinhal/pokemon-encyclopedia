@@ -7,6 +7,17 @@
   border-radius: 0.25rem;
   overflow: hidden;
 
+  & .pokemon-card__img {
+    align-self: center;
+  }
+
+  & .pokemon-card__footer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+  }
+
   &--small {
     width: 216px;
     height: 238px;
@@ -28,12 +39,8 @@
       text-transform: capitalize;
     }
 
-    & .pokemon-card__img {
-      align-self: center;
-
-      & img {
-        height: 179px;
-      }
+    & .pokemon-card__img img {
+      height: 179px;
     }
   }
 
@@ -43,6 +50,10 @@
 
     & .pokemon-card__title {
       display: none;
+    }
+
+    & .pokemon-card__img img {
+      height: 446px;
     }
   }
 }

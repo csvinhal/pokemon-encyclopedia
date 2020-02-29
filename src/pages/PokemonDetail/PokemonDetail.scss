@@ -1,3 +1,5 @@
+@import '../../sass/variables';
+
 .pokemon-detail {
   padding: 0 32px;
 }
@@ -9,6 +11,59 @@
   .pokemon-name__id {
     font-weight: 300;
     padding-right: 0.5rem;
+  }
+}
+
+.pokemon-detail__detail {
+  display: flex;
+
+  & .detail__general {
+    width: 510px;
+  }
+
+  & .general__specie {
+    text-align: justify;
+    margin-top: 25px;
+  }
+}
+
+.detail__complement {
+  margin-left: 32px;
+  width: 100%;
+  & .detail__characteristics {
+    padding: 58px;
+    border-radius: 0.25rem;
+    background-color: $united-nations-blue;
+  }
+
+  & .detail__status {
+    margin-top: 32px;
+    padding: 42px 24px;
+    border-radius: 0.25rem;
+    background-color: $anti-flash-white;
+  }
+}
+
+.detail__characteristics .characteristics__basic-info {
+  display: inline-block;
+
+  &:nth-child(even) {
+    padding-left: 80px;
+    padding-right: 20px;
+  }
+  & .basic-info__title {
+    font-family: 'Montserrat Regular';
+    color: white;
+    margin-bottom: 5px;
+  }
+
+  & .basic-info__value {
+    font-family: 'Montserrat Light';
+    margin-top: 0px;
+
+    &--capitalize {
+      text-transform: capitalize;
+    }
   }
 }
 
