@@ -56,7 +56,9 @@ const PokemonCard = (props) => {
               pos={index === 0 ? 'left' : 'right'}
               type={pokemonType.type.name}
               size={size}
-            />
+            >
+              {pokemonType.type.name}
+            </PokemonTypeBadge>
           ))}
       </div>
     </div>

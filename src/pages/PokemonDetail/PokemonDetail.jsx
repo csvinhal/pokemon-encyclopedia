@@ -4,6 +4,7 @@ import Button from '../../components/Button/Button';
 import PokemonCard from '../../components/PokemonCard/PokemonCard';
 import { getPokemon, getPokemonSpecie } from '../../shared/pokemonApi';
 import './PokemonDetail.scss';
+import PokemonMove from './PokemonMove/PokemonMove';
 
 const PokemonDetail = () => {
   const { id } = useParams();
@@ -64,8 +65,9 @@ const PokemonDetail = () => {
               <h3 className="basic-info__title">Category</h3>
               <p className="basic-info__value">
                 {specie &&
-                  specie.genera.find((genera) => genera.language.name === 'en')
-                    .genus}
+                  specie.genera
+                    .find((genera) => genera.language.name === 'en')
+                    .genus.replace(' Pokémon', '')}
               </p>
             </div>
             <div className="characteristics__basic-info">
@@ -117,6 +119,16 @@ const PokemonDetail = () => {
 
       <section className="pokemon-detail__moves">
         <h2>Moves</h2>
+        <div className="moves__container" role="list">
+          {pokemon &&
+            pokemon.moves.map((item) => (
+              <PokemonMove
+                key={item.move.name}
+                className="container__move-detail"
+                name={item.move.name}
+              />
+            ))}
+        </div>
       </section>
 
       <div className="pokemon-detail__explore-more">
