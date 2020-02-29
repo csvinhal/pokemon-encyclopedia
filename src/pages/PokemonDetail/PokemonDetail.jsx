@@ -79,7 +79,8 @@ const PokemonDetail = () => {
               <h3 className="basic-info__title">Abilities</h3>
               <p className="basic-info__value basic-info__value--capitalize">
                 {pokemon &&
-                  pokemon.abilities.find((ability) => ability.slot === 1).ability.name}
+                  pokemon.abilities.find((ability) => ability.slot === 1)
+                    .ability.name}
               </p>
             </div>
             <div className="characteristics__basic-info">
@@ -89,9 +90,34 @@ const PokemonDetail = () => {
           </div>
           <div className="detail__status">
             <h3>Base stats</h3>
+
+            <div className="status__stats">
+              {pokemon &&
+                pokemon.stats.reverse().map((stats) => {
+                  // eslint-disable-next-line camelcase
+                  const { base_stat, stat } = stats;
+
+                  // eslint-disable-next-line camelcase
+                  const barSize = Math.round((base_stat * 116) / 100);
+                  return (
+                    <div className="stats__grouping" key={stat.name}>
+                      <div className="stats__bar">
+                        <div
+                          className={`bar__filled bar__filled--${barSize}`}
+                        />
+                      </div>
+                      <span>{stat.name}</span>
+                    </div>
+                  );
+                })}
+            </div>
           </div>
         </div>
       </div>
+
+      <section className="pokemon-detail__moves">
+        <h2>Moves</h2>
+      </section>
 
       <div className="pokemon-detail__explore-more">
         <Button
