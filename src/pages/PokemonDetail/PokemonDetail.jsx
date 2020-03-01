@@ -33,7 +33,7 @@ const PokemonDetail = () => {
   }, [id]);
 
   return (
-    <div>
+    <main className="app__container page">
       <PokemonDetailHeader id={id} />
       <section className="pokemon-detail">
         <h1 className="pokemon-detail__pokemon-name">
@@ -148,7 +148,7 @@ const PokemonDetail = () => {
           />
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

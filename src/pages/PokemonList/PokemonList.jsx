@@ -20,18 +20,20 @@ const PokemonList = () => {
   }, [offset]);
 
   return (
-    <section className="pokemon-list">
-      <h1>Pokédex</h1>
-      <ul className="pokemon-list__cards">
-        {pokemons.length &&
-          pokemons.map((pokemon) => (
-            <PokemonItem key={pokemon.name} url={pokemon.url} />
-          ))}
-      </ul>
-      <div className="pokemon-list__load-more">
-        <Button priority="primary" label="Load more" onClick={onLoadMore} />
-      </div>
-    </section>
+    <main className="app__container page">
+      <section className="pokemon-list">
+        <h1>Pokédex</h1>
+        <ul className="pokemon-list__cards">
+          {pokemons.length &&
+            pokemons.map((pokemon) => (
+              <PokemonItem key={pokemon.name} url={pokemon.url} />
+            ))}
+        </ul>
+        <div className="pokemon-list__load-more">
+          <Button priority="primary" label="Load more" onClick={onLoadMore} />
+        </div>
+      </section>
+    </main>
   );
 };
 

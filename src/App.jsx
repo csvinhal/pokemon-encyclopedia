@@ -1,23 +1,27 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './App.scss';
 import Header from './header/Header';
-import PokemonList from './pages/PokemonList/PokemonList';
 import PokemonDetail from './pages/PokemonDetail/PokemonDetail';
+import PokemonList from './pages/PokemonList/PokemonList';
 
 const App = () => (
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <div className="app">
-      <Header />
-      <main className="app__container">
-        <Switch>
-          <Route path="/:id" component={PokemonDetail} />
-          <Route path="/" component={PokemonList} />
-          <Redirect to="/" />
-        </Switch>
-      </main>
-    </div>
-  </BrowserRouter>
+  <div className="app">
+    <Header />
+    <Route
+      render={({ location }) => (
+        <TransitionGroup>
+          <CSSTransition key={location.key} classNames="fade" timeout={300}>
+            <Switch location={location}>
+              <Route exact path="/" component={PokemonList} />
+              <Route path="/:id" component={PokemonDetail} />
+              <Redirect to="/" />
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
+      )}
+    />
+  </div>
 );
-
 export default App;
