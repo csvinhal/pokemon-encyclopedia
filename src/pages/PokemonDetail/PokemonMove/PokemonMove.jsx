@@ -3,10 +3,12 @@ import React, { useEffect, useState } from 'react';
 import PokemonTypeBadge from '../../../components/PokemonTypeBadge/PokemonTypeBadge';
 import { getMoveDetail } from '../../../shared/pokemonApi';
 import './PokemonMove.scss';
+import Loading from '../../../components/Loading/Loading';
 
 const PokemonMove = (props) => {
   const { name, className } = props;
   const [move, setMove] = useState(null);
+  const [loading, setLoading] = useState(false);
   const moveClassName = ['pokemon-move'];
 
   if (className) {
@@ -14,9 +16,11 @@ const PokemonMove = (props) => {
   }
 
   useEffect(() => {
+    setLoading(true);
     getMoveDetail(name).then((response) => {
       const { data } = response;
       setMove(data);
+      setLoading(false);
     });
   }, [name]);
 
@@ -26,16 +30,20 @@ const PokemonMove = (props) => {
       role="listitem"
       aria-label={move && move.name}
     >
-      {move && (
-        <PokemonTypeBadge
-          key={move.name}
-          pos="center"
-          type={move.type.name}
-          size="default"
-        >
-          {move.name}
-        </PokemonTypeBadge>
-      )}
+      <Loading loading={loading}>
+        {move ? (
+          <PokemonTypeBadge
+            key={move.name}
+            pos="center"
+            type={move.type.name}
+            size="default"
+          >
+            {move.name}
+          </PokemonTypeBadge>
+        ) : (
+          ''
+        )}
+      </Loading>
     </div>
   );
 };
